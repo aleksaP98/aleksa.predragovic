@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksa Predragovic - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="mobileNav">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="sectionHead">
+            <h1>About Me</h1>
+        </div>
+        <div class="wrapper">
+            <div data-aos="fade-right" class="image">
+                <img class="porfolioImage" src="assets/images/53762094_308117819900431_1555042215741358080_o.jpg" alt="porfolioImage">
+            </div>
+            <div data-aos="fade-left"  class="info">
+                <h1>Full Stack Web Developer</h1>
+                <p>My name is Aleksa Predragović, and i'm currently studding in ICT collage of vacational studies. Profile: Internet Technologies. Module: Web Programing</p>
+                <p>My goal is to become a Full stack developer and make some amazing applications and websites</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="sectionHead">
+            <h1>Skills</h1>
+        </div>
+        <div class="wrapper">
+            <article data-aos="zoom-in-up" class="skill">
+                <div class="icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skillDesc">
+                    <h2>HTML 5</h2>
+                    <p>HTML 5 adds all new html elements witch make it a lot easyer to make better websites</p>
+                </div>
+            </article>
+            <article data-aos="zoom-in-down" class="skill">
+                <div class="icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skillDesc">
+                    <h2>CSS 3</h2>
+                    <p>CSS 3 is a brand new way of styling that will make any website look beautiful</p>
+                </div>
+            </article>
+            <article data-aos="zoom-in-up" class="skill">
+                <div class="icon">
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="skillDesc">
+                    <h2>PHP</h2>
+                    <p>PHP is a beckend programing language witch is used for more advanced features such as connecting and reading data from a database</p>
+                </div>
+            </article>
+            <article data-aos="zoom-in-down" class="skill">
+                <div class="icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="skillDesc">
+                    <h2>Javascipt</h2>
+                    <p>Javascript is a frontend programing language and with it you can control all the elements on a page</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="sectionHead">
+            <h1>Projects</h1>
+        </div>
+        <div class="wrapper">
+            <article id="firstProject" class="project" data-aos="fade-up">
+                <div class="image">
+                    <a href="#"><img src="assets/images/firstProject.png" alt="firstProject"></a>
+                </div>   
+                <div class="title">
+                    <h3>My first project </h3>
+                </div>
+                <div class="description">
+                    <p>
+                        This was my first collage project on the subject of web design. Here i leared the basics of building a website and how to upload it on a hosting service.
+                    </p>
+                </div>
+            </article>
+            <article id="secondProject" class="project" data-aos="fade-down">
+                <div class="image">
+                    <a href="#"><img src="assets/images/secondProject.png" alt="secondProject"></a>
+                </div>   
+                <div class="title">
+                    <h3>Web programing project</h3>
+                </div>
+                <div class="description">
+                    <p>
+                        This was my first project on the subject of web programing. On this project i experienced some new technologies and functionalaties with Javascipt, by learing to manipulate the DOM elements of a html page. 
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="sectionHead">
+            <h1>Contact</h1>
+        </div>
+        <div class="wrapper">
+            <form class="wrapperColumn" action="index.html" method="POST" class="contactForm" data-aos="zoom-in">
+                <input class="inputField" type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input class="inputField" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <input class="inputField" type="email" name="email" id="email" placeholder="Email">
+                <textarea class="inputField" name="message" id="message" cols="30" rows="20" placeholder="Your Message"></textarea>
+                <input type="submit" class="inputField" id="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="icons">
+                <ul class="menu-list">
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="assets/scss/style.scss"><i class="fab fa-sass"></i></a></li>
+                    <li><a href="sitemap.xml"><i class="fas fa-sitemap"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Aleksa Predragović</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

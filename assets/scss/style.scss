@@ -1,0 +1,275 @@
+$font: Arial;
+$black: #000;
+$white:#fff;
+$grey: #807f80;
+$secundary:#FFD700;
+@mixin margin0 {
+    margin: 0px;
+}
+@mixin articleMargins{
+    margin: 15px 10px;
+}
+@mixin wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    @include margin0;
+    padding: 0px;
+    font: {
+        family:$font;
+    }
+    color: $white;
+}
+a{
+    text-decoration: none;
+    color: $white;
+    &:hover{
+        color: rgba($color: $secundary, $alpha: 0.8);
+    }
+}
+ul{
+    list-style: none;
+}
+.wrapper{
+    @include wrapper;
+}
+.borders{
+    height: 15px;
+    background: $secundary;
+}
+.image{
+    img{
+        max-width: 100%;
+    }
+}
+.sectionHead{
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    color: $secundary;
+    background: $black;
+    padding: 2px 0px;
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        margin: 10px 30px;
+        a{
+            font: {
+                size:20px;
+                weight:400;
+            }
+        }
+    }
+    
+}
+header{
+    background:$black;
+    padding: 10px;
+    .mobileNav{
+        display: none;
+        padding: 15px;
+        text-align: end;
+        i{
+            font-size: 35px;
+        }
+    }
+}
+#about{
+    background: url('../images/pexels-vishnu-r-nair-1105666.jpg');
+    padding: 20px;
+    @include margin0;
+    .sectionHead{
+     background: none;   
+    }
+    div{
+        margin: 0px 10px;
+    }
+    .info{
+        width: 50%;
+        h1{
+            text-align: center;
+        }
+        p{
+            
+            font: {
+                size:20px;
+                
+            }
+        }
+    }
+}
+#skills{
+    
+    .skill{
+        @include articleMargins;
+        padding: 10px;
+        width: 20%;
+        background: $black;
+        &:hover{
+            box-shadow: 10px 10px rgba($color: $secundary, $alpha: 0.7);
+            cursor: pointer;
+        }
+        text: {
+            align:center;
+        };
+        i{
+            font: {
+                size:80px;
+            }
+        }
+        .skillDesc{
+            p{
+                line-height: 20px;
+            }
+        }
+    }
+}
+#projects{
+    
+    .project{
+        @include articleMargins;
+        width: 45%;
+        color: $black;
+        .title{
+            text-align: center;
+        }
+        .description{
+            line-height: 25px;
+        }
+    }
+    
+}
+#contact{
+    .wrapper{
+        background:url('../images/photo5767015080293152865.jpg');
+        background: {
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+    .wrapperColumn{
+        @include wrapper;
+        flex-direction: column;
+        width: 50%;
+    }
+    .inputField{
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid $black;
+        border-radius: 20px;
+        &:focus {
+            border: none;
+        }
+    }
+    #submit{
+        cursor: pointer;
+    }
+}
+footer{
+    padding: 10px;
+    background: #0e0d09;
+    color: $secundary;
+    .icons{
+        .menu-list{
+            padding: 0px;
+        }
+        i{
+            font: {
+                size: 35px;
+            }
+        }
+        
+    }
+    .copyright{
+        text: {
+            align: center
+        }
+        font: {
+            size: 20px;
+        }
+    }
+}
+@media only screen and (max-width:1000px) {
+    .menu{
+        display: none;
+        .menu-list{
+            flex-direction: column;
+            text-align: end;
+        }
+    }
+    .mobileNav{
+        display: block!important;
+    }
+    #about{
+        .image{
+            width: 30%;
+        }
+    }
+    #skills{
+        .skill{
+            width: 40%;
+        }
+    }
+}
+@media only screen and(max-width:780px) {
+    #projects{
+        .project{
+            width: 100%;
+        }
+    }
+}
+@media only screen and(max-width:600px) {
+    #about{
+        .image{
+            width: 40%;
+        }
+    }
+}
+@media only screen and(max-width:480px) {
+    .wrapper{
+        padding: 5px;
+    }
+    .mobileNav{
+        i{
+            font-size: 25px!important;
+        }
+    }
+    #about{
+        .info{
+            width: 100%;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+        .image{
+            width: 60%;
+        }
+    }
+    #skills{
+        .skill{
+            width: 100%;
+        }
+    }
+    #contact{
+        .wrapperColumn{
+            width: 100%;
+        }
+        .inputField{
+            width: 85%;
+        }
+    }
+}
